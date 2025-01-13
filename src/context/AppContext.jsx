@@ -4,6 +4,7 @@ export const AppContext = createContext();
 
 const AppContextProvider = (props) => {
   const currency = "$";
+  //calculate age
   const calculateAge = (dob) => {
     const today = new Date();
     const birthDate = new Date(dob);
@@ -28,6 +29,7 @@ const AppContextProvider = (props) => {
     "Dec",
   ];
 
+  //Date format
   const slotDateFormat = (slotDate) => {
     const dateArray = slotDate.split("_");
     return (
